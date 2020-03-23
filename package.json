@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "babel": {
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-transform-runtime"]
+  },
   "scripts": {
     "start": "webpack-dev-server --debug --watch --config webpack.config.js"
   },
